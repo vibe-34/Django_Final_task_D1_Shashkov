@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>{{ flatpage.title }}</title>
-</head>
-<body>
-Автопарк наших сотрудников:
-<hr>
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+
+{% block content %}
+    <hr>
+    <h3>Автопарк наших сотрудников:</h3>
 {{ flatpage.content }}
-</body>
-</html>
+{% endblock content %}
+
